@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif; 
+#ff0000 Red logo
+#666666 grey logo
+#ffff00 yellow logo
+
+#de3241 red another
+#171717 black another
+ */
+
+:root {
+  --black: #000;
+--black2: #171717;
+  --para: #171717;
+  --white: #fff;
+  --yellow:#ffef00;
+  --red:#ff0000;
+  --red2:#de3241;
+  --red3:#ff848f;
+  --grey:#666666;
+  --grey2:#cbcbcb;
+  --packagechild:#f9f9f9;
+  --howitworksbg:#f8f8f8;
+  --footerblue:#242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 16px/18px 'Lato', sans-serif;
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* ================================HEADRE HERE================================== */
+
+header {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 100px;
+  
+}
+.logo a {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
+.hamburger {
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar ul li a {
+  color: var(--black);
+  text-decoration: none;
+  padding: 10px 25px;
+  display: block;
+  border-radius: 50px;
+  font: 600 18px/24px "Nunito", sans-serif;
+}
+
+.nav-bar ul li a:hover {
+  color:var(--black);
+  background:var(--yellow);
+}
+
+/* ================================BANNER================================== */
+
+#banner {
+  background: url(../images/Banner.jpg);
+  min-height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#banner  .banner-text{width:35%;
+position: absolute;
+left:6rem;
+top: 8rem;
+}
+.banner-text h1{ font: 600 60px/65px 'Playfair Display', serif;
+color: var(--white);
+padding: 0 0 20px 0;
+}
+
+.banner-text h3{ font: 600 30px/25px 'Playfair Display', serif;
+  color: var(--white);
+  }
+
+
+.banner-text p{ font: 500 18px/22px 'Playfair Display', serif;
+  color: var(--white);
+  padding: 0 0 40px 0;
+  }
+
+.banner-text .banner-btn{  font: 400 16px/18px 'Lato', sans-serif;
+padding: 15px 30px;
+text-decoration: none;
+color:var(--white);
+background:var(--black2);
+border-radius:50px;
+text-transform: uppercase;
+}
+.banner-text .banner-btn:hover{color: var(--black2);
+background:var(--red2);}
+
+/* ================================MY FORM================================== */
+
+
+#myform{
+background: url(../images/form-bg.jpg) no-repeat 50% 50%;
+
+} 
+
+.car-heading {
+  font: 500 40px/22px 'Playfair Display', serif;
+  color:var(--white);
+  padding: 0 0 30px 0;
+}
+
+.form-area {
+  margin: auto;
+  padding: 60px;
+  height: auto;
+}
+.form-area form .row{margin: auto;
+}
+
+
+form input[type="text"],form input[type="tel"],form input[type="email"] {
+  width: 100%;
+  height: 50px;
+  background: var(--white);
+  border: none;
+  border-radius: 40px;
+  font: 400 16px/18px 'Lato', sans-serif;
+  color: var(--form-text);
+  padding: 0px 20px;
+  outline: none;
+  box-shadow: 2px 2px 16px #1d1d1d;
+}
+
+
+
+#find-btn {
+  font: 400 16px/18px 'Lato', sans-serif;
+  padding: 15px 30px;
+  text-decoration: none;
+  position: relative;
+  top: 1rem;
+  box-shadow: 2px 2px 16px #1d1d1d;
+  color:var(--white);
+background:var(--black2);
+border-radius:50px;
+text-transform: uppercase;
+}
+#find-btn:hover{background:var(--red2);
+  color: var(--black);
+}
+
+/* ================================HOW IT WORKS================================== */
+
+
+#howitworks{padding: 8rem 5rem;
+background:var(--howitworksbg);
+}
+
+#howitworks h1{ font: 600 40px/22px 'Playfair Display', serif;
+color: var(--black);
+text-align: center;
+}
+#howitworks .child{text-align: center;
+margin:50px 0 0 0;
+}
+#howitworks .child h3{font: 500 25px/22px 'Lato', sans-serif;
+  color: var(--black);
+}
+
+#howitworks .child p{font: 500 16px/22px 'Lato', sans-serif;
+  color: var(--black);
+}
+#howitworks .child .child-icon{border: 1px solid var(--red);
+width:150px;
+height:150px;
+border-radius: 35% 65% 47% 53% / 36% 42% 58% 64% ;
+padding:25px 0 0 0;
+}
+
+
+/* ================================PACKAGES================================== */
+
+#packages{padding: 7rem 3rem 9rem;
+}
+
+#packages h2{font: 600 40px/22px 'Playfair Display', serif;
+  color: var(--black);
+  text-align: center;
+}
+
+
+#packages .child{background:var(--packagechild);
+margin: 50px 0 0 0;
+padding: 70px 40px;
+box-shadow: 2px 2px 16px #dfdfdf;
+border-radius: 4px;
+}
+#packages .child .child-heading{background: var(--red);
+  font: 600 30px/22px 'Playfair Display', serif;
+  color:var(--white);
+padding:10px 0;
+border-radius: 4px;
+}
+#packages .child h4{ font: 800 25px/22px 'Lato', sans-serif;
+  color:var(--grey);
+}
+
+#packages .child ul{list-style-type: none;
+margin: 20px 0 40px 0;
+padding: 0;
+}
+#packages .child ul li{
+  font: 500 16px/22px 'Lato', sans-serif;
+  color:var(--black);
+  margin: 10px;
+}
+
+
+#packages .child .package-btn{font: 500 16px/18px 'Lato', sans-serif;
+  padding: 15px 45px;
+  text-decoration: none;
+  color:var(--white);
+  background:var(--black2);
+  border-radius:50px;
+  text-transform: uppercase;
+}
+#packages .child .package-btn:hover{background: var(--red2);
+color: var(--black2);
+}
+
+/* ===============================ABOUT US=================================== */
+
+#aboutus{
+  padding: 10rem 0;
+  background:var(--red3);
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+#aboutus h2{font: 600 40px/22px 'Playfair Display', serif;
+  color:var(--black);
+  padding: 0 0 20px 0;
+}
+#aboutus p{font: 500 16px/22px 'Lato', sans-serif;
+  color:var(--para);
+  padding: 0 0 15px 0;
+}
+.about-btn{font: 400 16px/18px 'Lato', sans-serif;
+  padding: 15px 30px;
+  text-decoration: none;
+  color:var(--white);
+  background:var(--black2);
+  border-radius:50px;
+  text-transform: uppercase;
+}
+.about-btn:hover{background:var(--red2);
+color:var(--black);
+}
+
+
+.about-pic{width:50%;padding: 0 0 0 20rem;}
+.about-text{width:50%;padding: 0 10rem 0 0;}
+
+
+/* ===============================FEATURED BOOK=================================== */
+
+#featuredbook{padding: 5rem 0;
+background:var(--howitworksbg);}
+
+
+#featuredbook h2{font: 600 40px/22px 'Playfair Display', serif;
+  color:var(--black);
+  text-align: center;
+}
+
+
+
+#featuredbook p {
+  font: 500 16px/20px "Nunito", sans-serif;
+  color: var(--black);
+  text-align: center;
+}
+
+#featuredbook .owl-carousel {
+  padding: 0 40px;
+  margin-top: 5rem;
+}
+
+/* ===============================VIDEO SECTION=================================== */
+
+
+#video{margin: 0rem 0;
+padding: 5rem 4rem;
+background: var(--red);
+background-image: linear-gradient(to right, #ff5858 , #ffc8c8);
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+#video .text{width:50%;
+}
+#video .content{width:50%;
+}
+
+#video .iframe-video{width:600px;
+height:320px;
+}
+#video .text h2{font: 600 40px/22px 'Playfair Display', serif;
+  color:var(--black);
+  text-align:left;
+  padding: 0 0 25px 0;
+}
+
+#video .text p{ font: 500 16px/20px "Nunito", sans-serif;
+  color: var(--black);
+  text-align:left;
+}
+
+
+
+/* ===============================AUTHOR=================================== */
+
+#author{padding: 2rem 2rem;
+background: url(../images/authorbg.jpg) no-repeat 50% 50%;
+background-size: cover;
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+#author .author-text{width:50%;}
+#author .author-list{width:50%;}
+
+#author .author-text h2{font: 600 40px/22px 'Playfair Display', serif;
+  color:var(--white);
+  text-align:left;
+  padding: 0 0 25px 0;
+}
+
+#author .author-text p{ font: 500 16px/20px "Nunito", sans-serif;
+  color:var(--white);
+  text-align:left;
+}
+
+#author .author-list .owl-carousel {
+  padding: 0 40px;
+  margin-top: 5rem;
+}
+
+
+
+
+
+
+
+/* ================================FOOTER================================== */
+
+footer {
+  background:var(--footerblue);
+  padding: 5rem 0 2rem 0;
+}
+.footer-box {
+  padding: 0 60px;
+}
+.footer-box .child p {
+  font: 500 15px/20px "Montserrat", sans-serif;
+  color: var(--white);
+  padding: 20px 0 0 0;
+}
+
+.footer-box .child h4 {
+  font: 600 35px/28px "Nunito", sans-serif;
+  color: var(--white);
+}
+.footer-box .child ul {
+  list-style-type: none;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+.footer-box .child ul li {
+  margin: 20px 0 0 0;
+}
+
+.footer-box .child ul li a i {
+  font-size: 35px;
+  padding: 0 10px 0 0;
+}
+.footer-box .child ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font: 500 19px/20px "Montserrat", sans-serif;
+}
+.footer-social-box h4{ font: 600 35px/28px "Nunito", sans-serif;
+  color: var(--white);
+}
+
+.footer-social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-social li {
+  padding: 0 10px 0 0;
+}
+
+.copyright {
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  margin: 30px 0 0 0;
+}
+.copyright p {
+  font: 500 15px/17px "Montserrat", sans-serif;
+  color: var(--white);
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+.footer-box .footer-contact-box {
+  padding: 0 0 0 80px;
+}
+
+
+/* ================================ABOUT PAGE================================== */
+
+#enbanner{background: var(--black2);
+min-height:250px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.enbanner-text h2{font: 600 30px/25px 'Playfair Display', serif;
+  color: var(--white);
+  
+}
+
+.enabout-mission{display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 8rem 0;
+}
+
+.enabout-mission-pic{padding: 0 0 0 100px;}
+.enabout-mission-text{padding:0 100px 0 50px;
+}
+
+.enabout-mission-text h1{
+  font: 600 40px/22px 'Playfair Display', serif;
+  color: var(--black);
+  padding: 0 0 20px 0;
+}
+
+.enabout-mission-text p{
+  font: 400 16px/25px 'Lato', sans-serif;
+  color:var(--black2);
+}
+
+
+
+.enabout-vision{display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:0 0 5rem 0;
+  }
+
+
+  .enabout-vision-pic{padding:0 100px 0 50px;}
+  .enabout-vision-text{padding: 0 0 0 100px;
+  }
+
+
+  .enabout-vision-text h1{
+    font: 600 40px/22px 'Playfair Display', serif;
+    color: var(--black);
+    padding: 0 0 20px 0;
+  }
+  
+  .enabout-vision-text p{
+    font: 400 16px/25px 'Lato', sans-serif;
+    color:var(--black2);
+  }
+
+.enabout-history{background: url(../images/About-history-bg.jpg) no-repeat 50% 50%;
+background-size: cover;
+padding: 5rem 10rem;
+}
+
+
+.enabout-history h1{
+  font: 600 40px/22px 'Playfair Display', serif;
+  color: var(--black);
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+
+.enabout-history p{
+  font: 400 16px/25px 'Lato', sans-serif;
+  color:var(--black2);
+  text-align: center;
+}
+
+/* ================================SERVICE PAGE================================== */
+
+
+.enservice-part{padding: 8rem 6rem;
+}
+
+
+.enservice-part h1{font: 600 40px/22px 'Playfair Display', serif;
+  color: var(--black);
+  text-align: center;
+  padding: 0 0 25px 0;}
+
+  
+  .enservice-part  p{
+  font: 400 16px/25px 'Lato', sans-serif;
+  color:var(--black2);
+  text-align: center;
+}
+
+.enservice-part .child{margin:50px 0 0 0;}
+
+.enservice-part .child h3{font: 500 25px/22px 'Playfair Display', serif;
+  color: var(--black);
+padding: 15px 0;}
+
+
+
+  .enservice-part .child p{ font: 400 16px/25px 'Lato', sans-serif;
+    color:var(--black2);
+    text-align: left;
+  }
+
+
+
+
+
+

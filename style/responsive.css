@@ -1,0 +1,346 @@
+
+/* ==========================================1440======================== */
+
+@media only screen and (max-width: 1440px) {
+
+  #banner  .banner-text{width:40%;
+    left:5rem;
+    top: 8rem;
+    }
+    .form-area {
+      padding: 60px 10px;
+    }
+
+    #find-btn {
+      padding: 15px 26px;
+    }
+
+    .about-pic{padding: 0 0 0 15rem;
+    }
+    #video .text{padding: 0 5rem 0 0;
+    }
+
+}
+
+
+/* ==========================================976======================== */
+
+@media only screen and (max-width:976px) {
+
+  header {
+    padding: 8px 50px;
+    
+  }
+  .nav-bar ul li a {
+    padding: 10px 15px;
+    
+  }
+
+
+  .banner-text h3{ font-size:22px;
+    line-height: 30px;
+    }
+
+
+
+    #find-btn {
+      padding: 15px 12px;
+    }
+
+    .about-pic {
+      padding: 0 0 0 5rem;
+  }
+  .about-text {
+    padding: 0 4rem 0 0;
+}
+#video .text h2 { font-size: 40px;
+  line-height: 41px;
+  padding: 0 0 25px 0;
+}
+
+#video .iframe-video{width:400px;
+  height:320px;
+  }
+
+
+  /*============About Page====== */
+.enabout-mission{
+  flex-direction: column-reverse;
+  padding: 6rem 0;
+}
+
+.enabout-mission-pic{width:100%;
+padding: 0 0 0 50px;
+}
+.enabout-mission-pic img{width:850px;
+}
+
+.enabout-mission-text{width:100%;
+padding:50px 50px 0 50px;
+}
+
+
+.enabout-vision{flex-direction: column;
+  }
+
+
+  .enabout-vision-pic{
+    width:100%;
+    padding:0 100px 0 50px;}
+    .enabout-vision-pic img{width:850px;
+    }
+
+  .enabout-vision-text{
+    width:100%;
+    padding: 0 50px 0 50px;
+  }
+
+}
+
+
+
+/* ==========================================768======================== */
+
+@media only screen and (max-width:768px) {
+  header {
+    padding: 8px 30px;
+    
+  }
+  .nav-bar ul li a {
+    padding: 10px 10px;
+    
+  }
+
+
+  #banner  .banner-text{width:50%;
+    left:4rem;
+    top: 8rem;
+    }
+    .banner-text h1{
+      padding: 0 0 20px 0;
+      font-size: 50px;
+      line-height: 55px;
+      } 
+
+      .form-area {
+        padding: 60px 5px;
+      }
+
+
+      #find-btn {
+        padding: 15px 12px;
+        font-size: 10px;
+        line-height: 16px;
+      }
+
+      #aboutus{
+        display: block;
+        padding: 8rem 0;
+      }
+      .about-pic {width:100%;
+        padding: 0 0 0 15rem;
+    }
+    .about-text {width:100%;
+      padding: 43px 0rem 0 33px;
+  }
+
+  #video .iframe-video{width:350px;
+    height:320px;
+    }
+
+
+    #author .author-text h2 {
+font-size: 40px;
+line-height: 42px;
+    }
+
+/* =============About Page========================= */
+    .enabout-mission-pic img{width:650px;
+    }
+    .enabout-vision-pic img{width:650px;
+    }
+
+    .enabout-history {
+      padding: 5rem 2rem;
+  }
+
+
+
+
+}
+
+
+
+
+/* ==========================================480======================== */
+
+@media only screen and (max-width:480px) {
+
+
+
+  header{padding:8px 20px;}
+  
+  .hamburger{display: block;
+  cursor: pointer;
+  color:#000;
+  font-size: 30px;
+  }
+  
+  .nav-bar{height: 0;
+      position: absolute;
+      top: 110px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background:#ff848f;
+      transition: 0.6s;
+      z-index: 9999;
+      overflow: hidden;
+      border-radius: 0 0 0 60px;
+  }
+  .nav-bar.active{height:300px;
+  }
+  .nav-bar ul{display: block;
+  width: fit-content;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  transition: 0.6s;
+  opacity: 0;
+  }
+  
+  .nav-bar.active ul{opacity: 1;
+  }
+  
+  
+
+  .car-heading {
+font-size: 25px;
+line-height: 30px;
+  }
+
+
+  form input[type="text"], form input[type="tel"], form input[type="email"] {
+    margin: 10px 0 0 0;
+}
+
+#find-btn {
+  padding: 16px 168px;
+  font-size: 15px;
+  line-height: 16px;}
+
+.btm-responsive{margin:0 0 10px 0;}
+
+#howitworks {
+  padding: 8rem 1rem;}
+
+  #howitworks h1 {
+font-size: 35px;
+line-height: 40px;
+
+}
+#aboutus h2 {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+  .about-pic {
+    padding: 0 0 0 6rem;
+}
+
+#featuredbook h2 {  font-size: 35px;
+  line-height: 40px;
+}
+#video .text h2 {font-size: 35px;
+  line-height: 40px;
+}
+
+#video{margin: 0rem 0;
+  padding: 5rem 2rem;
+  display:block;
+  }
+
+  #video .text{width:100%;
+  }
+  #video .content{width:100%;
+  }
+  #video .iframe-video{width:400px;
+    height:320px;
+    }
+
+
+    #author{padding: 5rem 1rem;
+      display: block;
+      }
+      
+      #author .author-text{width:100%;}
+      #author .author-list{width:100%;}
+
+      #author .author-list .owl-carousel {
+        padding: 0 20px;
+        
+      }
+
+      .footer-box {
+        padding: 0 30px;
+    }
+
+    .footer-box .footer-contact-box {
+      padding: 30px 0 0 13px;
+  }
+
+  /*========= About page========== */
+
+  .enabout-mission{
+    padding: 3rem 0;
+    }
+
+    .enabout-mission-text h1 {
+      font-size: 35px;
+      line-height: 40px;
+  }
+
+  .enabout-vision-text h1 {
+    font-size: 35px;
+    line-height: 40px;}
+
+
+  .enabout-mission-pic img {
+    width: 385px;
+}
+
+.enabout-vision-pic img {
+  width: 385px;
+}
+.enabout-history h1 {   font-size: 35px;
+  line-height: 40px;}
+
+/* ======SERVICE PAGE===================== */
+  .enservice-part {
+    padding: 8rem 2rem;
+}
+
+
+.enservice-part h1 {font-size: 35px;
+  line-height: 40px;
+}
+
+.enservice-part .child h3 {
+  font-size:22px;
+  line-height: 25px;
+}
+
+.enservice-part {
+  padding: 4rem 2rem;
+}
+
+
+}
+
+  
+
+
+
+
+
+
+
