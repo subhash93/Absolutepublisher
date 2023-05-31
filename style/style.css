@@ -6,6 +6,7 @@ font-family: 'Playfair Display', serif;
 #666666 grey logo
 #ffff00 yellow logo
 
+footer bg: #242424;
 #de3241 red another
 #171717 black another
  */
@@ -15,6 +16,7 @@ font-family: 'Playfair Display', serif;
 --black2: #171717;
   --para: #171717;
   --white: #fff;
+  --white2:#f5f5f4;
   --yellow:#ffef00;
   --red:#ff0000;
   --red2:#de3241;
@@ -23,7 +25,8 @@ font-family: 'Playfair Display', serif;
   --grey2:#cbcbcb;
   --packagechild:#f9f9f9;
   --howitworksbg:#f8f8f8;
-  --footerblue:#242424;
+  --footerblue:#05080f;
+  --forminput:#f5f5f4;
 }
 
 * {
@@ -69,7 +72,7 @@ header {
   padding: 10px 25px;
   display: block;
   border-radius: 50px;
-  font: 600 18px/24px "Nunito", sans-serif;
+  font: 500 18px/24px 'Lato', sans-serif;
 }
 
 .nav-bar ul li a:hover {
@@ -201,6 +204,97 @@ padding:25px 0 0 0;
 }
 
 
+/* ===============================ABOUT US=================================== */
+
+#aboutus{
+  padding: 10rem 0;
+  background:var(--red3);
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+#aboutus h2{font: 600 40px/22px 'Playfair Display', serif;
+  color:var(--black);
+  padding: 0 0 20px 0;
+}
+#aboutus p{font: 500 16px/22px 'Lato', sans-serif;
+  color:var(--para);
+  padding: 0 0 15px 0;
+}
+.about-btn{font: 400 16px/18px 'Lato', sans-serif;
+  padding: 15px 30px;
+  text-decoration: none;
+  color:var(--white);
+  background:var(--black2);
+  border-radius:50px;
+  text-transform: uppercase;
+}
+.about-btn:hover{background:var(--red2);
+color:var(--black);
+}
+
+
+.about-pic{width:50%;padding: 0 0 0 20rem;}
+.about-text{width:50%;padding: 0 10rem 0 0;}
+
+
+/* ===============================FEATURED BOOK=================================== */
+
+#featuredbook{padding: 5rem 0;
+  background:var(--howitworksbg);}
+  
+  
+  #featuredbook h2{font: 600 40px/22px 'Playfair Display', serif;
+    color:var(--black);
+    text-align: center;
+  }
+  
+  
+  
+  #featuredbook p {
+    font: 500 16px/20px 'Lato', sans-serif;
+    color: var(--black);
+    text-align: center;
+  }
+  
+  #featuredbook .owl-carousel {
+    padding: 0 40px;
+    margin-top: 5rem;
+  }
+  
+/* ===============================VIDEO SECTION=================================== */
+
+
+#video{margin: 0rem 0;
+  padding: 5rem 4rem;
+  background: var(--red);
+  background-image: linear-gradient(to right, #ff5858 , #ffc8c8);
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  }
+  
+  #video .text{width:50%;
+  }
+  #video .content{width:50%;
+  }
+  
+  #video .iframe-video{width:600px;
+  height:320px;
+  }
+  #video .text h2{font: 600 40px/22px 'Playfair Display', serif;
+    color:var(--black);
+    text-align:left;
+    padding: 0 0 25px 0;
+  }
+  
+  #video .text p{ 
+    font: 500 16px/20px 'Lato', sans-serif;
+    color: var(--black);
+    text-align:left;
+  }
+  
 /* ================================PACKAGES================================== */
 
 #packages{padding: 7rem 3rem 9rem;
@@ -251,95 +345,6 @@ padding: 0;
 color: var(--black2);
 }
 
-/* ===============================ABOUT US=================================== */
-
-#aboutus{
-  padding: 10rem 0;
-  background:var(--red3);
-  display: flex;
-  align-items: center;
-  justify-content:space-around;
-}
-
-#aboutus h2{font: 600 40px/22px 'Playfair Display', serif;
-  color:var(--black);
-  padding: 0 0 20px 0;
-}
-#aboutus p{font: 500 16px/22px 'Lato', sans-serif;
-  color:var(--para);
-  padding: 0 0 15px 0;
-}
-.about-btn{font: 400 16px/18px 'Lato', sans-serif;
-  padding: 15px 30px;
-  text-decoration: none;
-  color:var(--white);
-  background:var(--black2);
-  border-radius:50px;
-  text-transform: uppercase;
-}
-.about-btn:hover{background:var(--red2);
-color:var(--black);
-}
-
-
-.about-pic{width:50%;padding: 0 0 0 20rem;}
-.about-text{width:50%;padding: 0 10rem 0 0;}
-
-
-/* ===============================FEATURED BOOK=================================== */
-
-#featuredbook{padding: 5rem 0;
-background:var(--howitworksbg);}
-
-
-#featuredbook h2{font: 600 40px/22px 'Playfair Display', serif;
-  color:var(--black);
-  text-align: center;
-}
-
-
-
-#featuredbook p {
-  font: 500 16px/20px "Nunito", sans-serif;
-  color: var(--black);
-  text-align: center;
-}
-
-#featuredbook .owl-carousel {
-  padding: 0 40px;
-  margin-top: 5rem;
-}
-
-/* ===============================VIDEO SECTION=================================== */
-
-
-#video{margin: 0rem 0;
-padding: 5rem 4rem;
-background: var(--red);
-background-image: linear-gradient(to right, #ff5858 , #ffc8c8);
-display: flex;
-justify-content:space-around;
-align-items: center;
-}
-
-#video .text{width:50%;
-}
-#video .content{width:50%;
-}
-
-#video .iframe-video{width:600px;
-height:320px;
-}
-#video .text h2{font: 600 40px/22px 'Playfair Display', serif;
-  color:var(--black);
-  text-align:left;
-  padding: 0 0 25px 0;
-}
-
-#video .text p{ font: 500 16px/20px "Nunito", sans-serif;
-  color: var(--black);
-  text-align:left;
-}
 
 
 
@@ -362,7 +367,8 @@ align-items: center;
   padding: 0 0 25px 0;
 }
 
-#author .author-text p{ font: 500 16px/20px "Nunito", sans-serif;
+#author .author-text p{ 
+  font: 500 16px/20px 'Lato', sans-serif;
   color:var(--white);
   text-align:left;
 }
@@ -387,14 +393,13 @@ footer {
 .footer-box {
   padding: 0 60px;
 }
-.footer-box .child p {
-  font: 500 15px/20px "Montserrat", sans-serif;
+.footer-box .child p { font: 500 15px/20px 'Lato', sans-serif;
   color: var(--white);
   padding: 20px 0 0 0;
 }
 
 .footer-box .child h4 {
-  font: 600 35px/28px "Nunito", sans-serif;
+  font: 500 35px/28px 'Lato', sans-serif;
   color: var(--white);
 }
 .footer-box .child ul {
@@ -413,9 +418,11 @@ footer {
 .footer-box .child ul li a {
   color: var(--white);
   text-decoration: none;
-  font: 500 19px/20px "Montserrat", sans-serif;
+  font: 500 19px/20px 'Lato', sans-serif;
+
 }
-.footer-social-box h4{ font: 600 35px/28px "Nunito", sans-serif;
+.footer-social-box h4{
+  font: 600 35px/28px 'Lato', sans-serif;
   color: var(--white);
 }
 
@@ -435,8 +442,7 @@ footer {
   border-bottom: 1px solid var(--white);
   margin: 30px 0 0 0;
 }
-.copyright p {
-  font: 500 15px/17px "Montserrat", sans-serif;
+.copyright p { font: 500 15px/17px 'Lato', sans-serif;
   color: var(--white);
   text-align: center;
   padding: 10px 0 0 0;
@@ -558,6 +564,117 @@ padding: 15px 0;}
     color:var(--black2);
     text-align: left;
   }
+
+
+
+/* ================================GALLERY PAGE================================== */
+
+
+.gallery-part{padding:8rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.gallery-part .child{margin: 20px 0 0 0;
+}
+
+
+
+
+/* ================================CONTACT PAGE================================== */
+
+
+.encontact{padding: 6rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.con-details{width: 40%;
+}
+.con-details h1{font: 600 40px/22px 'Playfair Display', serif;
+  color: var(--black);
+}
+.con-details .location{
+  font: 400 17px/25px 'Lato', sans-serif;
+  color: var(--black);
+  padding: 10px 0 0 0;
+}
+
+.con-details .mob{
+  font: 400 17px/25px 'Lato', sans-serif;
+  color: var(--black);
+}
+
+.con-details .mail{
+  font: 400 17px/10px 'Lato', sans-serif;
+  color: var(--black);
+}
+
+
+.con-details i{padding:0px 5px 0 0;}
+
+.con-details ul{list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+.con-details ul li{margin: 20px 20px 0 0;}
+.con-details ul li a{font-size: 30px;
+  color: var(--black2);
+}
+
+.con-details div{margin-top: 50px;
+}
+.con-form{width: 60%;
+}
+
+.con-form #form-part{padding: 0 40px;}
+
+
+.con-form #form-part form input[type="text"],
+.con-form #form-part form input[type="tel"],
+.con-form #form-part form input[type="email"] {
+  width: 100%;
+  height: 50px;
+  background:var(--white2);
+  border: none;
+  border-radius: 40px;
+  font: 400 14px/18px 'Lato', sans-serif;
+  color: var(--form-text);
+  padding: 0px 20px;
+  box-shadow: none;
+  margin: 20px 0 0 0;
+ 
+}
+
+.con-form #form-part form textarea{
+  width: 100%;
+  height:150px;
+  background:var(--white2);
+  border: none;
+  border-radius: 40px;
+  font: 400 14px/18px 'Lato', sans-serif;
+  color: var(--form-text);
+  padding: 20px 0 0 30px;
+  box-shadow: none;
+  margin: 20px 0 0 0;
+
+} 
+.con-page-btn{font: 400 16px/18px 'Lato', sans-serif;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--black2);
+  border-radius: 50px;
+  text-transform: uppercase;
+margin: 30px 0 0 20px;
+}
+
+
+
 
 
 

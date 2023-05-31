@@ -20,6 +20,14 @@
     #video .text{padding: 0 5rem 0 0;
     }
 
+
+/* Gallery Page */
+
+.gallery-part .child img{width:300px;
+}
+
+
+
 }
 
 
@@ -95,6 +103,33 @@ padding:50px 50px 0 50px;
     padding: 0 50px 0 50px;
   }
 
+
+
+/* Gallery Page*/
+
+.gallery-part .child{margin: 25px 0 0 0;
+}
+
+.gallery-part .child img{width:400px;
+}
+
+
+/* Contact Page*/
+.encontact {
+  padding: 6rem 2rem;
+}
+.con-form #form-part {
+  padding: 0 10px;
+}
+.col-12 {
+  width: 50%;
+}
+.con-form #form-part form textarea {
+  width: 215%;
+}
+
+
+
 }
 
 
@@ -164,6 +199,15 @@ line-height: 42px;
       padding: 5rem 2rem;
   }
 
+
+
+/* Gallery Page*/
+
+.gallery-part .child{margin: 25px 0 0 0;
+}
+
+.gallery-part .child img{width:300px;
+}
 
 
 
@@ -332,6 +376,37 @@ line-height: 40px;
 .enservice-part {
   padding: 4rem 2rem;
 }
+
+
+
+/* Gallery Page*/
+
+
+.gallery-part{padding:4rem 2rem;
+}
+
+.gallery-part .child{margin: 25px 0 0 0;
+}
+
+.gallery-part .child img{width:200px;
+}
+
+/* Contact Page*/
+
+.encontact{padding: 6rem 1rem;
+  display:block;
+}
+
+.con-details{width:100%;
+}
+.con-form{width:100%;
+}
+.con-form #form-part {
+  padding: 40px 0px 0 0;
+}
+
+
+
 
 
 }
